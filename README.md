@@ -41,14 +41,36 @@
     - `--fix` -> Faz as alterações necessarias.
 
 
+&nbsp;
 
+---
+
+## Criação de link markdown: 
+> Para criar um link dentro de um arquivo markdown podemos por uma ID em uma parte do arquivo e depois referencias assim:
+  - `[Descrição do link](#ID-Criando-no-ponto-desejado)`
 
 &nbsp;
 
 ---
-## Criação de link markdown: 
-> Para criar um link dentro de um arquivo markdown podemos por uma ID em uma parte do arquivo e depois referencias assim:
-  - [Descrição do link](#ID-Criando-no-ponto-desejado)
+
+## Arrays em memória: 
+> Ao pegar um Arrya para manipular e sempre bom lembrar que quando se coloca `novoArray = Array` você esta apenas referenciando valor do espaço de memoria do Array ja existente e ao modificar o novo voce tambem modifica o antigo.
+
+> Para resolver isso (caso a intenção seja deixar o original intacto) voce pode:
+  - `let novoArray = [...array];`
+    - Assim você coloca o valor das variaveis do array antigo dentro do novo.
+
+&nbsp;
+
+---
+
+## Randomizando lista: 
+> Ao usar essa linha de codigo nos pegamos um array e randomizamos ele, além de selecionar os 3 primeiros itens da lista randomizada.
+  - `array = array.sort(() => 0.5 - Math.random()).splice(0,3);` -> onde:
+    - `array.sort(() => 0.5 - Math.random())` - Pega o array e randomiza ele;
+    - `splice(0,3)` - Retorna os 3 primeiros itens;
+
+
 
 &nbsp;
 
@@ -56,6 +78,13 @@
 
 # Aulas:
 
+## Aula 1:
+
+- ESLint;
+  - O que é e como configurar o ESLint.
+- Como corrigir erros de código seguindo as regras da configuração;
+  - Criar a página de início da aplicação.
+  
 &nbsp;
 
 ---
