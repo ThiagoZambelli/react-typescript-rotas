@@ -8,7 +8,7 @@ function Inicio() {
   pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0,3);
 
   return (
-    <section>
+    <section>      
       <h3 className={styles.titulo}>
             Recomendações da cozinha
       </h3>

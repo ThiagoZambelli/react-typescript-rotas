@@ -109,6 +109,13 @@
   - Diferença entre BrowserRouter e HashRouter.
 - Routes;
   - Utilizar o routes para alternar entre rotas.
+
+## Aula 3:
+
+- Reutilizar o menu;
+  - Reaproveitar o header utilizando o react-router-dom;
+- Utilizar o componente Link;
+  - Fazer a página padrão.
   
 &nbsp;
 
