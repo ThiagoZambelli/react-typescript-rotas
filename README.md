@@ -19,11 +19,28 @@
   </a>
 </div>
 
+- [Projeto](#projeto)
+- [Problemas e Soluções](#problemas__solucoes)
+- [Aulas](#aulas)
+
 &nbsp;
 
 ---
 
-# Problemass e soluções:
+# Projeto: <div id="projeto"></div>
+
+## React router Dom:
+  > Pacote instalado (`npm i react-router-dom`), para controle de rotas da SPA.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+---
+
+# Problemass e soluções: <div id="problemas__solucoes"></div>
 
 &nbsp;
 
@@ -76,7 +93,7 @@
 
 ---
 
-# Aulas:
+# Aulas: <div id="aulas"></div>
 
 ## Aula 1:
 
@@ -84,6 +101,14 @@
   - O que é e como configurar o ESLint.
 - Como corrigir erros de código seguindo as regras da configuração;
   - Criar a página de início da aplicação.
+
+## Aula 2: 
+
+- Separar os dados do cardápio para uma pasta separada;
+- BrowserRouter e HashRouter;
+  - Diferença entre BrowserRouter e HashRouter.
+- Routes;
+  - Utilizar o routes para alternar entre rotas.
   
 &nbsp;
 
