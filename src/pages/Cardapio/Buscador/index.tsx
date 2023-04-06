@@ -1,5 +1,5 @@
-import styles from './Buscador.module.scss'
-import { CgSearch } from 'react-icons/cg'
+import styles from './Buscador.module.scss';
+import { CgSearch } from 'react-icons/cg';
 
 interface IBuscador {
     busca: string,
@@ -19,7 +19,7 @@ function Buscador({busca, setBusca }: IBuscador) {
         color='#221F3B'
       />     
     </div>
-  )
+  );
 }
 
-export default Buscador
+export default Buscador;

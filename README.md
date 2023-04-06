@@ -28,6 +28,31 @@
 &nbsp;
 
 ---
+## ESLINT: [Descrição da ferramenta](#eslint)
+> Para iniciar nossa refatoração e deixar o codigo mais clean e robusto, foi utilizado o `eslint` com o comando:
+  - `npm init @eslint/config`
+
+> Que instalou a biblioteca e suas dependencias. O eslint tem como principal função padronizar o codigo para que não aja problemas de incompatibilidade da refatoração.
+
+> Para que ele executasse foi usando o comando:
+  - `npx eslint ./src --fix` | Onde :
+    - `npx eslint` -> Apenas executa a dependencia;
+    - `./src` -> Estipula o local onde começar;
+    - `--fix` -> Faz as alterações necessarias.
+
+
+
+
+&nbsp;
+
+---
+## Criação de link markdown: 
+> Para criar um link dentro de um arquivo markdown podemos por uma ID em uma parte do arquivo e depois referencias assim:
+  - [Descrição do link](#ID-Criando-no-ponto-desejado)
+
+&nbsp;
+
+---
 
 # Aulas:
 
@@ -292,3 +317,30 @@
   - Alterar a quantidade ou ordenar os elementos de uma lista com métodos filter e sort.
 - Tipar o useState
   - Escrever useState <Tipo> para tipar o state e o setState.
+
+
+&nbsp;
+
+---
+
+&nbsp;
+
+
+<div id="eslint">
+
+# ESLint ->
+
+Agora que criamos nosso primeiro arquivo de ESLint, vamos falar mais a fundo sobre ele! O que é ESLint? Onde ele vive? Do que se alimenta?
+
+ESLint é uma junção de 2 palavras, ES (abreviação de EcmaScript) e Lint (Fiapo em inglês), e o que são essas 2 palavras?
+
+  - EcmaScript é a linguagem de programação que inspirou o Javascript, então é a “forma genérica” do Javascript. Outras linguagens baseadas em EcmaScript são o ActionScript (que tem como uma das implementação o falecido Flash) e o JScript.
+
+  - Lint é um termo que foi popularizado de um utilitário Unix para examinar o código fonte da linguagem C. A partir daí o Lint começou a ser criado sempre como uma ferramenta para analisar códigos e estabelecer padrões / encontrar bugs.
+
+Beleza! Agora que sabemos a etimologia da palavra, para que o ESLint serve mesmo?
+
+O ESLint é uma ferramenta que analisa o código e aponta quaisquer problemas que encontrar. Ele pode encontrar bugs, áreas potencialmente problemáticas, estilos de codificação ruins e questões de estilo.
+
+Ou seja, ele irá nos auxiliar durante a codificação a encontrar erros de escrita ou outros problemas, podemos também o utilizar para manter um estilo de código. E temos esse auxílio direto no editor de código que utilizamos ou no terminal.
+</div>
