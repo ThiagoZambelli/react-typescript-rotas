@@ -34,7 +34,19 @@
 
 &nbsp;
 
----
+## useNavigate:
+
+> Hook do `react-router-dom` que nos traz o 'historico de navegação' das rotas (registrados pela biblioteca em forma de pilha).
+    
+  - E.x
+
+~~~JavaScript
+  // Invocação
+  const navigate = useNavigate();
+
+  // Utilização (Colocando -1 para que ele retorne a ultima pagina sobre a pilha)
+  onClick={() => navigate(-1)}
+~~~
 
 &nbsp;
 
@@ -116,6 +128,15 @@
   - Reaproveitar o header utilizando o react-router-dom;
 - Utilizar o componente Link;
   - Fazer a página padrão.
+
+## Aula 4:
+
+- Desenvolver um tema para a aplicação;
+- Aplicar o componente Outlet do react-router-dom;
+- Utilizar o hook useNavigate para navegar entre rotas;
+- Criar uma tela not found para páginas não encontradas.
+
+
   
 &nbsp;
 

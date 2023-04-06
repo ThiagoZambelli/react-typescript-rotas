@@ -1,0 +1,26 @@
+@import 'styles/_variaveis.scss';
+@import 'styles/_breakpoints.scss';
+
+.footer{
+    height: 20vh;
+    background-color: $cor-base;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__miniEu{
+        max-width: 100px;
+    }
+    &__texto{
+        font-size: 1.2rem;
+        color: $cor-fundo;
+        @media screen and (max-width: $mobile) {
+            font-size: 0.8rem;
+        }
+    }
+    &__ancora{
+        color: $cor-destaque-claro;
+    }
+
+}
