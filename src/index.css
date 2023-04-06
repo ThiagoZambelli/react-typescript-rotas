@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-texto);
+}
+
+:root {
+  --cor-fundo: #EBEBEB;
+  --cor-destaque: #6F4A8E;
+  --cor-base: #221F3B;
+
+  --fonte-texto:'Italiana', serif;
+}
