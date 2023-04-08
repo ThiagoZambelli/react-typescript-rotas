@@ -3,6 +3,7 @@ import cardapio from 'data/cardapio.json';
 import Item from './Item';
 import styles from './Itens.module.scss';
 import { useState, useEffect } from 'react';
+import { Cardapio } from 'types/IPrato';
 
 interface Props {
   busca: string,
@@ -24,7 +25,7 @@ function Itens(props: Props) {
     return regex.test(title);
   }
 
-  function ordenar(novaLista: typeof cardapio){
+  function ordenar(novaLista: Cardapio){
     switch(ordenador){
     case 'porcao':
       return novaLista.sort((a, b) => a.size > b.size ? 1 : -1);

@@ -34,6 +34,20 @@
 
 &nbsp;
 
+## Pasta type:
+  > Com a utilização constante do `typeof` para tipar cardapio e pratos, foi criado uma pasta dentro de `src` para os tipos expecificamente. Dentro dela foi importado o cardapio e exportados os tipos correspondentes.
+
+  - E.x
+  ~~~JavaScript
+  import cardapio from 'data/cardapio.json';
+
+  export type Cardapio = typeof cardapio;
+
+  export type Prato = typeof cardapio[0];
+  ~~~
+
+&nbsp;
+
 ## useNavigate:
 
 > Hook do `react-router-dom` que nos traz o 'historico de navegação' das rotas (registrados pela biblioteca em forma de pilha).
@@ -47,6 +61,24 @@
   // Utilização (Colocando -1 para que ele retorne a ultima pagina sobre a pilha)
   onClick={() => navigate(-1)}
 ~~~
+
+> Tambem pode ser usado para nevegação direcionada:
+  - E.x
+
+~~~JavaScript
+  const navigate = useNavigate();
+
+  function redirecionar(prato: typeof cardapio[0]){
+    navigate(`/prato/${prato.id}`, {state: {...prato}, replace: true | false});
+  }
+  // onde state esta enviando todo o estado 'prato' para proxima pagina, e o replace previne a pilha de voltar para a pagina anterior com true.
+~~~
+
+&nbsp;
+
+## useParmes:
+
+> Hook do `react-router-dom` que nos traz o objeto criado quando se coloca no phat ('/:alguma coisa').   
 
 &nbsp;
 
@@ -135,6 +167,15 @@
 - Aplicar o componente Outlet do react-router-dom;
 - Utilizar o hook useNavigate para navegar entre rotas;
 - Criar uma tela not found para páginas não encontradas.
+
+## Aula 5:
+
+- Criar a rota pratos;
+- Passar parâmetros na rota;
+- Criar detalhes do prato;
+- Utilizar o hook useLocation;
+- Passar estados entre rotas;
+- Refatorar tags.
 
 
   
