@@ -177,6 +177,12 @@
 - Passar estados entre rotas;
 - Refatorar tags.
 
+## Aula 6:
+
+- Acrescentar a tela NotFound na tela de detalhes;
+- Utilizar o componente Redirect;
+- Resolver o header.
+
 
   
 &nbsp;

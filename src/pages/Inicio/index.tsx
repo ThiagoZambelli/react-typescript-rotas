@@ -9,7 +9,7 @@ function Inicio() {
   const navigate = useNavigate();
 
   function redirecionar(prato: Prato){
-    navigate(`/prato/${prato.id}`, {state: {prato}, replace:true});
+    navigate(`/prato/${prato.id}`, {state: {prato}});
   }
 
   let pratosRecomendados = [...cardapio];

@@ -1,10 +1,7 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-$massas: #EEA7A7;
-$carnes: #6B4B4B;
-$combos: #6B6B6B;
-$veganos: #80aa40;
+
 
 .item {
   display: flex;
@@ -13,6 +10,9 @@ $veganos: #80aa40;
   padding: .5rem 1rem;
   border-radius: 15px;
   transition: 0.5s;
+  cursor: pointer;
+  align-items: center;
+
   &__imagem {
     min-width: 240px;    
     @media (max-width: $desktop_xsm) {
@@ -57,4 +57,5 @@ $veganos: #80aa40;
 .item:hover{
   transform: scale(1.02);
   box-shadow: 0 0 5px $cor-base;
+  background-color: $cor-fundo-grey;
 }

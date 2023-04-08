@@ -1,16 +1,17 @@
 import TagsPrato from 'components/TagsPrato';
 import styles from './Item.module.scss';
-
 import { Prato } from 'types/IPrato';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Item(props: Prato) {
 
-  const { title, photo, description} = props;
+  const { id, title, photo, description} = props;
+  const navigate = useNavigate();
 
   return (
-    <div className={styles.item}>
+    <div className={styles.item} onClick={() => navigate(`/prato/${id}`)}>
       <div className={styles.item__imagem}>
         <img src={photo} alt={title} />
       </div>
